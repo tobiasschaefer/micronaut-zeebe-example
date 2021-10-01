@@ -1,3 +1,10 @@
 micronaut:
   application:
     name: micronautZeebeExample
+# clusterId, clientId and clientSecret must be replaced with values provided by Camunda Cloud. Alternatively, leave them out and connect to a local Zeebe Broker.
+#zeebe:
+#  client:
+#    cloud:
+#      clusterId: xxx
+#      clientId: xxx
+#      clientSecret: xxx

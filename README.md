@@ -1,12 +1,27 @@
-## Micronaut 3.0.2 Documentation
+# Micronaut Zeebe Example
 
-- [User Guide](https://docs.micronaut.io/3.0.2/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.0.2/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.0.2/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+This example shows how to implement a Zeebe Worker based on the Micronaut Framework using
+the [Micronaut Zeebe Client](https://github.com/camunda-community-hub/micronaut-zeebe-client).
 
-## Feature http-client documentation
+## Configuration
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+Add your credentials to access Camunda Cloud (or your self hosted cluster) to `application.yml`.
 
+## Worker
+
+To start the worker:
+
+`./gradlew run`
+
+This will output something like:
+
+```
+Hello world, from job 2251799813685345
+Activated 1 jobs for worker default and job type say-goodbye
+Retrieved value 40. Goodbye, from job 2251799813685352
+Activated 1 jobs for worker default and job type say-hello
+```
+
+## GraalVM
+
+See https://github.com/camunda-community-hub/micronaut-zeebe-client#graalvm for generic instructions.

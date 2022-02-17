@@ -1,6 +1,10 @@
 micronaut:
   application:
     name: micronautZeebeExample
+netty:
+  default:
+    allocator:
+      max-order: 3
 # clusterId, clientId and clientSecret must be replaced with values provided by Camunda Cloud. Alternatively, leave them out and connect to a local Zeebe Broker.
 #zeebe:
 #  client:

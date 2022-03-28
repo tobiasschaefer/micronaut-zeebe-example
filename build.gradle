@@ -28,7 +28,7 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
-    implementation("info.novatec:micronaut-zeebe-client-feature:1.4.1")
+    implementation("info.novatec:micronaut-zeebe-client-feature:1.6.0")
 }
 
 application {
